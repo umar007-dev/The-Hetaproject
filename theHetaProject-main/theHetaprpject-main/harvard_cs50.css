@@ -1,0 +1,339 @@
+/* for pc */
+* {
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-image: url('harvard_cs50.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* top_navigation */
+#top_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#top_navigation button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(57, 26, 42, 0.6);
+    color: aliceblue;
+    border: none;
+}
+#top_navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* heading */
+#heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#heading h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 100px;
+    color: white;
+}
+
+/* image */
+#image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    background-color: black;
+    opacity: 0.7;
+    margin: 0 300px;
+}
+#image img {
+    height: 250px;
+    width: 350px;
+}
+
+/* marquee */
+marquee {
+    background-color: rgba(5, 5, 5, 0.5);
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* navigation */
+#navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(57, 26, 42, 0.6);
+}
+#navigation h2, #navigation h4 {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+    /* overview */
+#overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+#overview button {
+    margin: 10px 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 5, 2, 0.4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+#overview button:hover {
+    background-color: rgba(250, 235, 215, 0.5);
+    color: black;
+}
+    /* clip */
+#clip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+#clip button {
+    width: 550px;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 5, 2, 0.4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+#clip button:hover {
+    background-color: rgba(250, 235, 215, 0.5);
+    color: black;
+}
+
+/* overview_details */
+#overview_details {
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: auto;
+}
+#overview_details div {
+    background-color: rgba(16, 119, 122, 0.256);
+    color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    color: blanchedalmond;
+    width: 350px;
+}
+#retrun_to_overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 10px 0;
+}
+#retrun_to_overview button {
+    background-color: rgba(122, 21, 16, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#retrun_to_overview button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* clip_details */
+#clip_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#clip_details section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px
+}
+#clip_details section>h4 {
+    background-color: rgba(122, 21, 16, 0.5);
+    color: white;
+    padding: 20px;
+}
+#clip_details section>iframe {
+    height: 500px;
+    width: 1000px;
+}
+.return_to_clip {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.return_to_clip button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(57, 26, 42, 0.6);
+    color: aliceblue;
+    border: none;
+}
+.return_to_clip button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+/* gotoTop */
+.goToTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.goToTop button {
+    background-color: rgba(16, 119, 122, 0.5);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.goToTop button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-weight: bold;
+}
+
+/* copyright */
+.copyright {
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for phone */
+@media screen and (max-width: 600px) {
+    /* top_navigation */
+    #top_navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    #top_navigation button {
+        text-align: left;
+    }
+
+    /* heading */
+    #heading h1 {
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* image */
+    #image {
+        margin: auto;
+    }
+    #image img {
+        height: 160px;
+        width: 200px;
+    }
+
+    /* marquee */
+    marquee {
+        margin: 13px 0;
+    }
+
+    /* navigation */
+    #navigation h2,h4 {
+        font-size: smaller;
+    }
+        /* overview */
+    #overview {
+        flex-direction: column;
+        width: 100%;
+    }
+    #overview button {
+        width: 100%;
+        margin: 5px 0;
+        border-radius: 0;
+        text-align: left;
+    }
+        /* clip */
+    #clip button {
+        width: 100%;
+        margin: 5px;
+        border-radius: 0;
+    }
+
+    /* overview_details */
+    #overview_details {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    #overview_details div {
+        margin: 10px;
+        width: auto;
+        font-size: small;
+    }
+    #retrun_to_overview button {
+        margin: 0;
+        font-size: small;
+    }
+
+    /* clip_details */
+    #clip_details section>iframe {
+        height: 250px;
+        width: 100%;
+    }
+    .return_to_clip button {
+        font-size: small;
+    }
+
+    /* gotoTop */
+    .goToTop button {
+        font-size: small;
+    }
+
+    /* copyright */
+    .copyright {
+        font-size: small;
+    }
+}

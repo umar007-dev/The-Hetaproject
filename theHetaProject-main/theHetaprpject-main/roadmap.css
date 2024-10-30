@@ -1,0 +1,331 @@
+/* for pc */
+* {
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-image: url('roadmap.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* top_navigation */
+#top_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#top_navigation button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(57, 26, 42, 0.6);
+    color: aliceblue;
+    border: none;
+}
+#top_navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* heading */
+#heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#heading h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 100px;
+    color: white;
+}
+
+/* overview */
+#overview {
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: auto;
+}
+#overview div {
+    background-color: rgba(16, 119, 122, 0.256);
+    color: aliceblue;
+    margin: 30px 10px;
+    padding: 10px;
+    text-align: left;
+    color: blanchedalmond;
+    width: 350px;
+    border-radius: 25px;
+}
+
+/* marquee */
+marquee {
+    background-color: rgba(5, 5, 5, 0.5);
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* field_navigation */
+#field_navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.5);
+    padding: 0 0 25px 0;
+    margin: 0 20%;
+}
+#field_navigation h3 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px 25px;
+}
+#first4, #second4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#first4 button, #second4 button {
+    margin: 10px 30px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    background-color: rgba(79, 37, 40, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#first4 button:hover, #second4 button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* field_details */
+#field_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(16, 119, 122, 0.256);
+}
+#field_details .field {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 500px;
+    padding: 25px;
+    text-align: left;
+    color: antiquewhite;
+}
+#field_details .field h3, #field_details .field p {
+    margin: 0 10px
+}
+#field_details .field h3 {
+    text-align: center;
+}
+#field_details .return_to_fn {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.return_to_fn  button{
+    margin: 5px 5px 50px 5px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgba(51, 2, 27, 0.6);
+    color: aliceblue;
+    border: none;
+}
+.return_to_fn button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* useful_sites */
+#useful_sites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(57, 26, 42, 0.5) ;
+}
+#useful_sites h3 {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+#useful_sites div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#useful_sites div > button {
+    margin: 10px;
+    padding: 8px;
+    background-color: rgba(16, 119, 122, 0.5);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#useful_sites div > button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* gotoTop */
+.goToTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.goToTop button {
+    background-color: rgba(65, 35, 3, 0.7);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.goToTop button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-weight: bold;
+}
+
+/* copyright */
+.copyright {
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile */
+@media screen and (max-width: 600px) {
+    /* top_navigation */
+    #top_navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    #top_navigation button {
+        text-align: left;
+    }
+
+    /* heading */
+    #heading h1 {
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* overview_details */
+    #overview {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    #overview div {
+        margin: 10px;
+        width: auto;
+        font-size: small;
+    }
+
+    /* marquee */
+    marquee {
+        margin: 13px 0;
+    }
+
+    /* field_navigation */
+    #field_navigation {
+        margin: 0 0;
+        font-size: small;
+    }
+    #first4, #second4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    #first4 button, #second4 button {
+        padding: 10px 30px;
+        margin: 5px 5px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* field_details */
+    #field_details {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+    }
+    #field_details .field {
+        width: 100%;
+        padding: 0;
+    }
+    #field_details .field h3, #field_details .field ol {
+        font-size: small;
+        margin: 0 20px;
+        padding: 5px;
+    }
+    #field_details .field p {
+        margin: 5px;
+    }
+    .return_to_fn  button {
+        font-size: small;
+        padding: 5px;
+    }
+
+    /* useful_sites */
+    #useful_sites {
+        font-size: small;
+    }
+    #useful_sites div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #useful_sites div > button {
+        width: 100%;
+    }
+
+    /* gotoTop */
+    .goToTop button {
+        font-size: small;
+    }
+
+    /* copyright */
+    .copyright {
+        font-size: small;
+    }
+}

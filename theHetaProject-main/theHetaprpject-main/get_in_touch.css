@@ -1,0 +1,439 @@
+/* for pc */
+* {
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-image: url('get_in_touch.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* top_navigation */
+#top_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#top_navigation button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(7, 1, 4, 0.6);
+    color: aliceblue;
+    border: none;
+}
+#top_navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+/* heading */
+#heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#heading h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 100px;
+    color: white;
+}
+
+/* image */
+#image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0 300px;
+    border-radius: 20px;
+}
+#image img {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* marquee */
+marquee {
+    background-color: rgba(5, 5, 5, 0.5);
+    color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* post_navigation */
+#post_navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+}
+#post_navigation > #goto_post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#post_navigation > #goto_post button {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: grey;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+#post_navigation > #goto_post button:hover {
+    background-color: rgba(6, 79, 92, 0.6);
+    color: white;
+}
+
+/* semester_navigation */
+#semester_navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(57, 26, 42, 0.6);
+    margin: 10px 0;
+    padding: 20px 0;
+}
+#semester_navigation h3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+#semester_navigation > #semester_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#semester_navigation > #semester_buttons > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.four_semester_buttons button {
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(6, 79, 92, 0.6);
+    border: none;
+    font-weight: bolder;
+    color: white;
+}
+.four_semester_buttons button:hover {
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+/* teahers_contact_card */
+#teahers_contact_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(6, 79, 92, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+}
+#teahers_contact_card > .individuals_contact_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    width: 350px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#teahers_contact_card > .individuals_contact_card > h3 {
+    background-color: rgba(57, 26, 42, 0.4);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+    /* individuals */
+#teahers_contact_card > .individuals_contact_card > .individuals {
+    background-color: rgba(9, 39, 60, 0.4);
+    margin: 20px 0;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#teahers_contact_card > .individuals_contact_card > .individuals > .contact_and_more {
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+#teahers_contact_card > .individuals_contact_card > .individuals > .contact_and_more button {
+    margin: 10px;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(3, 1, 0, 0.615);
+    color: white;
+}
+#teahers_contact_card > .individuals_contact_card > .individuals > .contact_and_more button:hover {
+    background-color: rgba(57, 26, 42, 0.8);
+}
+    /* return_button */
+.return_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+.return_button button {
+    margin: 10px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(84, 47, 53, 0.5);
+    color: white;
+}
+.return_button button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* cr_cocr */
+#cr_cocr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(214, 171, 171, 0.5);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+#cr_cocr h3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#cr_cocr > .cr_cocr_contact_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#cr_cocr > .cr_cocr_contact_card > .rptv_contact_card {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(46, 22, 56, 0.6);
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+}
+#cr_cocr > .cr_cocr_contact_card > .rptv_contact_card h4 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0 20px;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+#cr_cocr > .cr_cocr_contact_card > .rptv_contact_card > .click_for_action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#cr_cocr > .cr_cocr_contact_card > .rptv_contact_card > .click_for_action button {
+    border: none;
+    margin: 10px;
+    background-color: rgba(38, 88, 117, 0.5);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#cr_cocr > .cr_cocr_contact_card > .rptv_contact_card > .click_for_action button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+/* gotoTop */
+.goToTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.goToTop button {
+    background-color: rgba(144, 32, 32, 0.4);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.goToTop button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-weight: bold;
+}
+
+/* copyright */
+.copyright {
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* for phone */
+@media screen and (max-width: 600px) {
+    /* top_navigation */
+    #top_navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    #top_navigation button {
+        text-align: left;
+    }
+
+    /* heading */
+    #heading h1 {
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* image */
+    #image {
+        margin: auto;
+    }
+    #image img {
+        height: 160px;
+        width: 100%;
+        opacity: 0.7;
+    }
+
+    /* marquee */
+    marquee {
+        margin: 13px 0;
+    }
+
+    /* post_navigation */
+    #post_navigation {
+        font-size: small;
+    }
+    #post_navigation > #goto_post {
+        flex-direction: column;
+    }
+    #post_navigation > #goto_post button {
+        font-size: small;
+        width: 150px;
+    }
+
+    /* semester_navigation */
+    #semester_navigation h3 {
+        font-size: small;
+        padding: 5px 10px;
+    }
+    #semester_navigation > #semester_buttons > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .four_semester_buttons button {
+        font-size: smaller;
+        margin: 5px;
+        width: 150px;
+        padding: 5px 20px;
+        text-align: left;
+    }
+
+    /* teahers_contact_card */
+    #teahers_contact_card {
+        padding: 10px;
+    }
+    #teahers_contact_card > .individuals_contact_card {
+        width: 100%;
+        padding: 0;
+        margin: 20px;
+        font-size: smaller;
+    }
+    #teahers_contact_card > .individuals_contact_card > h3 {
+        margin: 10px 30px;
+    }
+        /* individuals */
+    #teahers_contact_card > .individuals_contact_card > .individuals {
+        margin: 20px 20px;
+        font-size: smaller;
+    }
+    #teahers_contact_card > .individuals_contact_card > .individuals > .contact_and_more button {
+        font-size: smaller;
+        width: auto;
+    }
+    /* return_button */
+    .return_button {
+        flex-direction: column;
+        font-size: smaller;
+    }
+    .return_button button {
+        font-size: smaller;
+        width: 100px;
+        margin: 5px;
+    }
+
+    /* cr_cocr */
+    #cr_cocr h3 {
+        margin: 10px;
+        font-size: x-small;
+        padding: 5px;
+    }
+    #cr_cocr > .cr_cocr_contact_card {
+        flex-direction: column;
+        padding: 0;
+        width: auto;
+        font-size: smaller;
+    }
+    #cr_cocr > .cr_cocr_contact_card > .rptv_contact_card {
+        padding: 10px 0;
+        margin: 10px 0;
+        width: 100%;
+    }
+    #cr_cocr > .cr_cocr_contact_card > .rptv_contact_card p {
+        font-size: smaller;
+        margin: 10px 20px;
+    }
+    #cr_cocr > .cr_cocr_contact_card > .rptv_contact_card > .click_for_action button {
+        margin: 5px;
+        font-size: smaller;
+    }
+
+        /* gotoTop */
+        .goToTop button {
+            font-size: xx-small;
+            padding: 5px;
+            margin: 25px 0 0 0;
+        }
+    
+        /* copyright */
+        .copyright {
+            font-size: x-small;
+        }
+    
+}
